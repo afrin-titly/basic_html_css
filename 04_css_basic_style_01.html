@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is CSS basic style 01</title>
+	<style type="text/css">
+		#imge{
+			height: 200px;
+			background-image: url("b1.png");
+			border: 2px dotted black;
+			background-size: auto;
+			padding: 15px;
+			background-clip: border-box;
+			border-left: 10px blue solid;
+		}
+		#imge1{
+			height: 200px;
+			background-image: url(b2.jpg);
+			background-repeat: repeat-x;
+			border: 2px dotted black;
+			background-size: 300px 100px;
+			background-attachment: scroll;
+			padding: 15px;
+			background-clip: padding-box;
+		}
+		#idea{
+			height: 200px;
+			background-image: url(idea.jpeg);
+			background-repeat: no-repeat;
+			background-position: left top;
+			margin-right: 400px;
+			background-size: auto;
+			border: 2px dotted black;
+			padding: 15px;
+			background-clip: content-box;
+		}
+		#idea p{margin-left: 400px;}
+		#bgcol{
+			background-color: #C9CDC3;
+			border-left: 10px solid black;
+			border-bottom: 15px solid red;
+			border-top-right-radius: 15px;
+			/*border-bottom-right-radius: 15px;*/
+			box-shadow: 10px 15px blue;
+		}
+
+		#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(border.png) 30 round;
+}
+ul{
+	list-style:hiragana;
+}
+
+	</style>
+</head>
+<body>
+	<div id="imge">
+	this portion contain image background
+</div>
+
+<div id="imge1">
+	this portion contain pattern image background
+</div>
+
+<div id="idea">
+	<p>W3Schools background no-repeat, set position example.Now the background image is only shown once, and positioned away from the text.In this example we have also added a margin on the right side, so the background image will never disturb the text.</p></div>
+<div id="bgcol">
+	<p>colored background</p>
+</div>
+<p id="borderimg1">Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+</body>
+</html>
