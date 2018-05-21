@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS basic style 02</title>
+	<style type="text/css">
+		#dir{
+			direction: rtl;
+		}
+		#a{text-align: center;}
+		h1{text-decoration: overline;
+			text-shadow: 2px 2px 3px #FF0000, 0 0 5px #0000FF;}
+		h2{text-decoration: blink;}
+		h3{text-decoration: overline underline;}
+		h4{text-decoration: line-through;}
+		div{width: 200px;
+			border: 1px solid black;}
+		div.aa{word-wrap: normal;}
+		div.bb{word-wrap: break-word;}
+		#c{text-align: justify;
+			text-justify: inter-word;}
+			#an{height: 200px;
+				width: 200px;
+				background: blue;
+				position: relative;
+				-webkit-animation: mymove 5s 2;
+				-webkit-animation-timing-function: linear;
+				/*animation: mymove 5s infinite;*/
+			}
+			@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+			/*@keyframes mymove{*/
+				/*from{left: 0px;}*/
+				/*to{left: 500px;}*/
+			/*}*/
+			#tran{
+				width: 100px;
+                height: 100px;
+    			background: red;
+				-webkit-transition: width 2s;
+				-webkit-transition-delay: 1s;
+			    -webkit-transition-timing-function: cubic-bezier(0.4, 0.7, 1.0, 0.1);
+			}
+			#tran:hover{
+				width: 300px;
+			}
+		
+	</style>
+</head>
+<body>
+<p id="dir"> this is rtl</p>
+<p id="a">this is in center</p>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<div class="aa"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+<div class="bb"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+<p id="c">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<div id="an"></div>
+<div id="tran"></div>
+
+</body>
+</html>
